@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Forever Fox</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<script>
+		    var ffImages = new Array(
+			    "../img/paper-mountains.gif",
+			    "../img/about.jpg",
+			    "../img/works.jpg",
+			    "../img/connect.jpg",
+			    "../img/paper-mountains.jpg",
+			    "../img/capybara.png",
+			    "../img/chameleon.png",
+			    "../img/duck.png",
+			    "../img/fox.png",
+			    "../img/hippo.png",
+			    "../img/lemur.png",
+			    "../img/manatee.png",
+			    "../img/octopus.png", 
+			    "../img/pangolin.png",
+			    "../img/quokka.png", 
+			    "../img/squirrel.png",
+			    "../img/tapir.png",
+			    "../img/tortoise.png" 
+			    );
+
+		    function ffPreload(){
+			    for (i = 0; i < ffPreload.arguments.length; i++) {
+				   ffImages[i] = new Image();
+				   ffImages[i].src = ffPreload.arguments[i];
+			    }
+			  };
+			  
+			ffPreload();	
+		</script>			
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111934023-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-111934023-1');
+		</script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>		
+	</head>
+
+	<body onload="ffPreload()">
+		<header id="top" class="header">
+			<h1 class="main-title">Forever Fox</h1>
+			<nav id="mobileNav">
+				<h3><a href="#top">Forever Fox</a></h3>
+				<ul class="navigation">
+					<li><a href="#about">about</a></li>
+					<li class="dropdown"><a href="#works">works</a>
+						<div class="dropdown-content">
+							<p><a href="#web">web</a></p>
+							<p><a href="#visual">visual</a></p>	
+							<p><a href="#music">audio</a></p>	
+						</div>
+					</li>
+					<li><a href="https://github.com/foreverfox" target="_blank"><i class="fab fa-github"></i></a>
+					<li><a href="https://www.facebook.com/AlexOgdenArt/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="https://twitter.com/foreverfoxlove" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="https://soundcloud.com/user-827322490" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
+					<li><a href="https://www.instagram.com/foreverfoxlove/" target="_blank"><i class="fab fa-instagram"></i></a></li>				
+					<li><a href="mailto:foreverfoxlove@gmail.com"><i class="fas fa-envelope"></i></a></li>
+				</ul>
+			</nav>	
+		</header>
+<!-- About -->
+		<section id="about" class="section">	
+			<h2 class="title">about</h2>			
+			<article class="about-container">
+				<figure class="figure">
+					<img src="img/alex.png" alt="photo of Alex Ogden">
+				</figure>
+				<div class="content">
+					<p>Alex Ogden is a graduate student at <a href="https://mcad.edu/" target="_blank">Minneapolis College of Art and Design</a> where she studies graphic and web design. She enjoys nerding out over code and experimenting with unconventional design.</p>
+					
+					<p>Alex is also an illustrator, photographer, musician, and unabashed admirer of all things cat. She launched Forever Fox design in 2018.</p>
+					<ul class="connect-list">
+						<li><a href="https://github.com/foreverfox" target="_blank"><i class="fab fa-github"></i></a></li>
+						<li><a href="https://www.facebook.com/AlexOgdenArt/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="https://twitter.com/foreverfoxlove" target="_blank"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="https://soundcloud.com/user-827322490" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
+						<li><a href="https://www.instagram.com/foreverfoxlove/" target="_blank"><i class="fab fa-instagram"></i></a></li>				
+						<li><a href="mailto:foreverfoxlove@gmail.com"><i class="fas fa-envelope"></i></a></li>
+					</ul>
+				</div><!-- content -->
+				<div class="clearfix"></div>
+			</article>					
+		</section>
+
+<!-- Works -->		
+		<section id="works" class="works-section">		
+			<h2 class="title">works</h2>			
+			<div class="works-container">
+				<article class="works-article">
+					<h3 id="web" class="works-title">web</h3>	
+					<figure class="thumbnail">
+						<img src="" alt="alex ogden portfolio site">
+					</figure>
+					<figure class="thumbnail">
+						<img src="" alt="gili estlin hirsch redesign">
+					</figure>
+					<figure class="thumbnail">
+						<img src="" alt="gili estlin hirsch original">
+					</figure>
+					<figure class="thumbnail">
+						<img src="" alt="limerick bouvier des flandres site">
+					</figure>
+					<figure class="thumbnail">
+						<img src="" alt="fox and owl press site">
+					</figure>
+					<figure class="thumbnail">
+						<img src="" alt="edible schoolyard nyc project">
+					</figure>
+					<figure class="thumbnail">
+						<img src="" alt="white birch resort project">
+					</figure>
+				</article>
+
+				<article class="works-article">	
+					<h3 id="visual" class="works-title">visual</h3>
+					<h4>illustrations + sketches</h4>
+					<figure class="thumbnail">
+						<img src="" alt="anna">
+					</figure>
+					<figure class="thumbnail">
+						<img src="" alt="sketches and drawings">
+					</figure>
+					<h4>photography</h4>
+					<figure class="thumbnail">
+						<img src="" alt="body of work">
+					</figure>
+					<figure class="thumbnail">
+						<img src="" alt="photography">
+					</figure>
+					<h4>video + animation</h4>
+					<figure class="thumbnail">
+						<img src="" alt="home movie project">
+					</figure>
+					<figure class="thumbnail">
+						<img src="" alt="stop motion animation">
+					</figure>
+				</article>
+				
+				<article class="works-article">				
+					<h3 id="music" class="works-title">audio</h3>
+					<figure class="thumbnail">
+						<img src="" alt="hoof.beat on soundcloud">
+					</figure>
+				</article>			
+			</div> <!-- works-container -->
+			<div class="clearfix"></div>
+		</section>
+		<footer class="footer">
+			<p>&copy;2018 Alex Ogden</p>
+		</footer>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/script.js"></script>		
+	</body>
+</html>

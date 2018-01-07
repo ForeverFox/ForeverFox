@@ -1,0 +1,328 @@
+/* MEDIA QUERIES */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Sanchez");
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.clearfix {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+:focus {
+  outline: none; }
+
+html {
+  font-size: 16px; }
+
+body {
+  width: 100%;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  background-color: #e7e9e5;
+  font-family: "Open Sans", sans-serif; }
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: 0.75rem; }
+  @media screen and (min-width: 1366px) {
+    h1 {
+      font-size: 2.5rem; } }
+
+h2 {
+  font-size: 1.5rem;
+  letter-spacing: 1rem; }
+  @media screen and (min-width: 1366px) {
+    h2 {
+      font-size: 1.75rem; } }
+
+h3 {
+  font-size: 1.25rem;
+  letter-spacing: 0.5rem; }
+
+h1, h2, h3 {
+  font-family: Sanchez, serif; }
+
+h4 {
+  letter-spacing: 0.25rem;
+  padding: 1rem 0 1.5rem 0; }
+
+p {
+  font-size: 0.875rem; }
+
+a:link {
+  text-decoration: none;
+  color: #8781bd; }
+
+a:visited {
+  color: #514d6f; }
+
+a:hover {
+  color: #fc4444; }
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/paper-mountains.jpg);
+  background-image: url(../img/paper-mountains.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100; }
+
+.section {
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 2rem; }
+  @media screen and (min-width: 1366px) {
+    .section {
+      height: 100vh; } }
+
+.main-title {
+  text-align: center;
+  padding: 1rem 0;
+  position: absolute;
+  top: 120px;
+  left: 40px; }
+  @media screen and (min-width: 1366px) {
+    .main-title {
+      position: absolute;
+      top: 120px;
+      left: 120px;
+      text-align: left; } }
+
+.title {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 120px; }
+  @media screen and (min-width: 1366px) {
+    .title {
+      position: absolute;
+      top: 120px;
+      left: 120px;
+      text-align: left; } }
+
+/* Slide Down Nav for Mobile */
+#mobileNav {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: -120px;
+  transition: top 0.3s;
+  background-color: #fc4444;
+  padding: 1rem;
+  text-align: center; }
+
+.navigation li {
+  text-align: center;
+  text-decoration: none; }
+  @media screen and (min-width: 1366px) {
+    .navigation li {
+      padding: 1rem 0;
+      font-size: 1.25rem; } }
+
+#mobileNav h3 {
+  padding-bottom: 1rem; }
+  @media screen and (min-width: 1366px) {
+    #mobileNav h3 {
+      padding: 1rem 0;
+      float: left; } }
+
+@media screen and (min-width: 1366px) {
+  .navigation {
+    float: right;
+    padding: 1rem 0; } }
+
+/* .main-nav {
+  width: 100%;
+  position: fixed;
+  top: 100%;
+  z-index: 10000;
+  padding: 1rem;
+  text-align: center;  
+    
+    @include desktop {
+      top: 120px;
+      right: 120px;
+      z-index: 10000;
+    }
+}
+
+.mobile-connect {
+  padding: 1.5rem 0 0 0;
+
+    @include desktop {
+      float: right;
+    }
+} */
+/* .main-nav li, */
+#mobileNav li {
+  display: inline; }
+
+/* .main-nav li, */
+#mobileNav li, .connect-list li {
+  list-style-type: none;
+  padding: 0 0.5rem;
+  font-family: Oswald, sans-serif;
+  letter-spacing: 0.15rem; }
+
+/* .main-nav a, */
+#mobileNav a, .connect-list a {
+  color: black; }
+
+.dropdown {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .dropdown {
+      position: relative;
+      display: inline-block; } }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  min-width: 80px;
+  z-index: 10000;
+  background-color: #fc4444;
+  padding: 0.5rem; }
+
+.dropdown-content p {
+  padding: 0.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  text-align: center; }
+
+.dropdown:hover .dropdown-content {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .dropdown:hover .dropdown-content {
+      display: block; } }
+
+/* About */
+#about {
+  background-image: url(../img/about2.jpg); }
+
+.about-container {
+  position: relative; }
+  @media screen and (min-width: 1366px) {
+    .about-container {
+      width: 75%;
+      height: 100%;
+      margin: 0 auto;
+      padding-top: 360px; } }
+
+.content {
+  position: relative;
+  width: 100%; }
+  @media screen and (min-width: 1366px) {
+    .content {
+      position: relative;
+      width: 33%;
+      float: left; } }
+
+.content p {
+  line-height: 1.6;
+  padding: 1rem; }
+  @media screen and (min-width: 1366px) {
+    .content p {
+      padding: 0 0 1.5rem 2rem;
+      line-height: 1.8; } }
+
+.figure {
+  width: 360px;
+  height: auto;
+  margin-top: 4.5em; }
+  @media screen and (min-width: 1366px) {
+    .figure {
+      width: 600px;
+      height: 450px;
+      float: left;
+      margin: 0 1rem; } }
+
+.figure img {
+  max-width: 100%; }
+
+.connect-list {
+  display: none; }
+  @media screen and (min-width: 1366px) {
+    .connect-list {
+      display: inline-block;
+      padding: 5rem 0;
+      font-size: 1.5em;
+      float: right; } }
+
+.connect-list li {
+  display: inline-block;
+  padding: 1rem; }
+
+/* Works */
+#works {
+  background-image: url(../img/works.jpg); }
+
+@media screen and (min-width: 1366px) {
+  .works-section {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+
+.works-container {
+  width: 50%;
+  margin: 0 auto; }
+
+.works-article {
+  width: 100%;
+  padding-bottom: 2rem; }
+
+.works-article:last-child {
+  padding-bottom: 4rem; }
+
+.works-article:first-child {
+  margin-top: 120px; }
+
+.thumbnail {
+  width: 100%;
+  height: 120px;
+  border: 1px solid purple; }
+
+.works-title {
+  margin: 1rem 0;
+  width: 100%;
+  padding-top: 120px; }
+
+/* Footer */
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  height: 120px;
+  background-image: url(../img/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: bottom; }
+  @media screen and (min-width: 1366px) {
+    .footer {
+      height: 200px; } }
+
+.footer p {
+  font-size: 0.75rem;
+  padding: 1rem;
+  text-align: center; }
+  @media screen and (min-width: 1366px) {
+    .footer p {
+      margin-top: 140px; } }
+
+/*# sourceMappingURL=style.css.map */
